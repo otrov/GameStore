@@ -1,0 +1,11 @@
+{
+  "name": "gameshop",
+  "version": "1.0.0",
+  "description": "Mini game shop cart app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nemanja Milojevic",
+  "license": "MIT"
+}

@@ -1,0 +1,120 @@
+/* Importovani google fontovi */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainBlackGrey: #35424a;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainFont:
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--mainBlackGrey);
+  border-bottom: 3px solid var(--primaryColor);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.navbar-centar {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.nav-ikona {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+.cart-itemi {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+
+.logo {
+  font-family: 'Press Start 2P', cursive;
+  color: var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+}
+
+.logo-boja {
+  color: var(--primaryColor);
+}
+/* KRAJ NAVBARA */
+
+/* --------------- SHOWCASE ---------------- */
+.showcase {
+  min-height: calc(100vh - 60px);
+  background: url("./images/background-valleyOfTheFourWinds-WOW.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+  opacity: 0.85;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+/* --------------- END OF SHOWCASE ---------------- */
